@@ -1,0 +1,80 @@
+19/07/2024 - Docker Commands
+
+2 docker images
+   3 docker ps
+   4 docker ps -a
+   5 docker create ubuntu /bin/bash
+   6 docker images
+   7 docker ps
+   8 docker ps -a
+   9 docker start
+  10 docker start 5d4f00533b22
+  11 docker ps
+  12 docker pa -a
+  13 docker ps -a
+  14 clear
+  15 docker pull amazonlinux
+  16 docker images
+  17 docker create -it --name Sample amazonlinux /bin/bash
+  18 docker ps
+  19 docker ps -a
+  20 docker start Sample
+  21 docker ps
+  22 docker attach Sample
+  23 docker create -it --name example ubuntu /bin/bash
+  24 docker ps -a
+  25 docker start example
+  26 docker ps
+  27 docker attach example
+  28 docker ps
+
+
+  22nd July - Commands 
+
+
+   1 docker imags
+   2 docker images
+   3 docker create -it --name tomcat-server tomcat /bin/bash
+   4 docker ps -
+   5 docker ps -a
+   6 clear
+   7 docker ps -a
+   8 docker start tomcat-server
+   9 docker ps
+  10 docker attach tomcat-server
+  11 docker ps
+  12 docker ps -a
+  13 docker rm tomcat-server
+  14 docker ps
+  15 docker ps -a
+  16 clear
+  17 docker run -it --name webserver -p 80:80 ubuntu /bin/bash
+  18 docker ps
+  19 docker port webserver
+  20 clear
+  21 docker ps
+  22 docker pause webserver
+  23 docker ps
+  24 docker unpause webserver
+  25 docker ps -a
+  26 docker stop webserver
+  27 docker start webserver
+  28 cocker ps
+  29 docker ps
+  30 docker attach webserver
+  31 docker ps
+  32 docker create -it --name A1 amazonlinux /bin/bash
+  33 docker ps
+  34 docker ps -a
+  35 docker rm A1
+  36 docker rm webserver
+  37 docker rm -f webserver
+  38 docker ps -a
+  39 docker images
+  40 docker rmi ubuntu
+  41 docker images
+  42 docker rmi amazonlinux
+  43 docker run -td --name B1 ubuntu /bin/bash
+  44 docker ps
+  45 docker exec -it B1 /bin/bash
+  46 docker ps
